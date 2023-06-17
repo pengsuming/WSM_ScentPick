@@ -1,0 +1,23 @@
+
+  h1 {
+    margin: 3px;
+  }
+  #scene1 {
+    background-image: url("../img/image.png");
+  }
+  #scene2 {
+    background-image: url("../img/image2.png");
+  }
+  #scene3 {
+    background-image: url("../img/image3.png");
+    
+  }
+  .button{
+    font-size: 25px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 88px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 3px solid #000000;
+    border-radius: 20px;
+  }

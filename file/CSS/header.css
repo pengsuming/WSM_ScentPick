@@ -1,0 +1,19 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+  }
+
+  header button {
+    margin: 0 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+  }

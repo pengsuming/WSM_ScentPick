@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>샤워 코롱</title>
+  <link rel="stylesheet" href="CSS/footer.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@200;400;700&family=Noto+Sans+KR:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      position: relative;
+      font-family: 'Hahmlet', serif;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .rectangle {
+      position: relative;
+      display: flex;
+    }
+  </style>
+
+  <script>
+    // 첫번째 줄 버튼 기능
+    function showButtons(buttonNumber) {
+      var firstRow = document.getElementById("first-row");
+      var secondRow = document.getElementById("second-row");
+      var thirdRow = document.getElementById("third-row");
+
+      if (buttonNumber === 1) {
+        firstRow.classList.remove("hidden");
+        secondRow.classList.add("hidden");
+        thirdRow.classList.add("hidden");
+      } else if (buttonNumber === 2) {
+        firstRow.classList.add("hidden");
+        secondRow.classList.remove("hidden");
+        thirdRow.classList.add("hidden");
+      } else if (buttonNumber === 3) {
+        firstRow.classList.add("hidden");
+        secondRow.classList.add("hidden");
+        thirdRow.classList.remove("hidden");
+      }
+    }
+  </script>
+
+</head>
+
+<body bgcolor="#F8E0E6">
+  <header>
+    <button onclick="showSection(1)" style="color: white">향Pick</button>
+    <button onclick="showSection(2)" style="color: white">향수#</button>
+    <button onclick="showSection(3)" style="color: white">HowThat</button>
+  </header>
+
+  <div class="button-container">
+    <button class="button" onclick="showButtons(1)">향수 종류</button>
+    <button class="button" onclick="showButtons(2)">향기의 계열</button>
+    <button class="button" onclick="showButtons(3)">향수 사용법</button>
+  </div>
+
+  <div id="first-row">
+    <div class="firstB">
+      <button class="button" onclick="location.href='perfume.html'">퍼퓸</button>
+      <button class="button" onclick="location.href='button1.html'">오드 퍼퓸</button>
+      <button class="button" onclick="location.href='button2.html'">오드 뚜왈렛</button>
+      <button class="button" onclick="location.href='button3.html'">오드 코롱</button>
+      <button class="button">샤워 코롱</button>
+    </div>
+  </div>
+
+  <div id="second-row" class="hidden">
+    <div class="firstB">
+      <button class="button" onclick="location.href='button5.html'">플로럴 향</button>
+      <button class="button" onclick="location.href='button6.html'">머스크 향</button>
+      <button class="button" onclick="location.href='button7.html'">우디향</button>
+    </div>
+  </div>
+
+  <div id="third-row" class="hidden">
+    <div class="firstB">
+      <button class="button" onclick="location.href='button8.html'">뿌리는 위치</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="rectangle">
+    <div class="text">
+      <h2>샤워 코롱</h2>
+        <h5>이 샤워 코롱은 영국에서부터 시작되었으며 지금 당장
+          10번이상 향수를 맡지 않을 시 당신은...
+          반응형인지 확인하겠습니다<br><br>
+          농도 : 1~1000%<br><br>
+          향기의 지속시간 : 24시간 이상<br><br>
+          깊고 부드러운 향기가 특징이다
+        </h5>
+    </div>
+    <div class="images">
+      <img src="image\perfume1.jpg">
+    </div>
+
+  </div>
+  </div>
+
+</body>
+</html>
